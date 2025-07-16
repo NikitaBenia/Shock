@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "shock",
+	"version": "${version}",
+	"name": "Shock",
+	"description": "The mod for full warfare simulation",
+	"authors": [
+		"gribok"
+	],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/shock/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.gribok.shock.Shock"
+		],
+		"fabric-datagen": [
+			"net.gribok.shock.ShockDataGenerator"
+		],
+		"client": [
+			"net.gribok.shock.ShockClient"
+		]
+	},
+	"mixins": [
+		"shock.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
