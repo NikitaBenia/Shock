@@ -2,6 +2,8 @@ package net.gribok.shock;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.gribok.shock.blocks.ModBlocks;
+import net.gribok.shock.blocks.entity.ModBlockEntities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,5 +18,7 @@ public class Shock implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntities();
 	}
 }

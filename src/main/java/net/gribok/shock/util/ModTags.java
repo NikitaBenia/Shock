@@ -7,6 +7,7 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class ModTags {
+
     public static class Items {
 
         public static final TagKey<Item> COPPER_NUGGET = createTag( "copper_nugget");
